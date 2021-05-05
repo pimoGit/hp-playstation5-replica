@@ -1,10 +1,10 @@
 /* general rules ------------- */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}  settato già dalla libreria*/
 
 body{
     /* i font principali ('SST W20 Medium' e "sst") sono di SONY a pagamento, 
@@ -23,31 +23,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-
-    /* centralizziamo ciò che si può */
-.btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #0061ff;
-    color: #fff;
-    text-decoration: none;
-}
-.btn:hover{ /* semplifichiamo hover per tutti*/
-    text-decoration: none;
-    background-color: #3b85ff;
-}
-
-    /* ipotizziamo di avere un tot di varianti simili nel sito quindi centralizziamo */
-.btn.white {
-    border: solid 1px #000;
-    background-color: #fff;
-    color: #000;
-}
-.btn.white:hover{
- background-color: #f5f5f5;
-}
 
 
 
