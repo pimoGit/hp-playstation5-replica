@@ -28,7 +28,20 @@ a:hover {
 
 
 /* header  ------------- */
-    /* font-family: helvetica, arial, sans-serif; */
+header{
+    font-family: helvetica, arial, sans-serif;
+    height: 100px; /* test*/
+}
+
+#headup{
+    height: 36px;
+    background-color: black;
+}
+
+#headup img {
+    width: 75px;
+    margin-right: 10px;
+}
 
 
 
