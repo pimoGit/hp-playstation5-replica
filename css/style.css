@@ -81,6 +81,9 @@ header .dropdown-menu {
     text-align: center;
     border: none;
 }
+header .dropdown-menu[data-bs-popper]{
+    margin-top: 0;
+}
     /* e altri vari aggiustamenti sul layout voluto */
 header .dropdown-menu li{
  display: inline-block;
