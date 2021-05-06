@@ -40,7 +40,7 @@ a, a:hover {
 }
 
 
-
+/* ------ ogni id o class custom (quindi non di BS) inizia con "cs-" ---------- */
 
 
 
@@ -51,12 +51,12 @@ header{
     height: 100px; /* test*/
 }
 
-#headup{
+#cs-headup{
     height: 36px;
     background-color: black;
 }
 
-#headup img {
+#cs-headup img {
     width: 75px;
     margin-right: 10px;
 }
@@ -78,13 +78,42 @@ header .dropdown, .dropend, .dropstart, .dropup {
     /* e averli a tutta larghezza */
 header .dropdown-menu {
     width: 100%;
+    text-align: center;
+    border: none;
+}
+header .dropdown-menu li{
+ display: inline-block;
+ margin-right: 15px;
+}
+header .dropdown-item:focus, .dropdown-item:hover {
+    color: #000;
+    background-color: transparent;
+}
+header .dropdown-item img {
+    display: block;
+    height: 70px;
+}
+header .dropdown-item:hover {
+    box-shadow: 1px 1px 6px 1px #999;
+}
+header .cs-divider {
+    width: 100%;
+}
+header .cs-nav-lev3 span {
+    color: #0070d1;
+}
+header .cs-nav-lev3 a {
+    color: #000;
+}
+header .cs-nav-lev3 a:hover {
+    color: #0070d1;
 }
 
     /* regole links */
 header .navbar-light .navbar-nav .nav-link {
  color: #000;
 }
-header .navbar-light .navbar-nav .nav-link:hover {
+header .navbar-light .navbar-nav .nav-link:hover,  header .navbar-light .navbar-nav .nav-link.show {
     color: #0070d1;
 }
 header .dropdown-toggle::after{
@@ -103,11 +132,32 @@ header .dropdown-toggle:hover:after{
 
 
     /* nostra class "cerca" */
-header nav .cerca {
+header nav .cs-cerca {
     margin-left: 15px;
 }
-header nav .cerca img {
+header nav .cs-cerca img {
     height: 23px;
+}
+
+@media screen and (max-width: 991px) {
+    header .dropdown-menu {
+        width: 100%;
+        text-align: left;
+        border-top: solid 1px #999;
+        border-bottom: solid 1px #999;
+        border-radius: 0;
+    }
+    header nav .cs-cerca {
+        margin: 15px 0;
+        border: solid 1px #999;
+    }
+    header nav .cs-cerca img {
+        height: 35px;
+    }
+    header .btn {
+        margin-top: 15px;
+        width: 50%;
+    }
 }
 
 
