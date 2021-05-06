@@ -81,6 +81,7 @@ header .dropdown-menu {
     text-align: center;
     border: none;
 }
+    /* e altri vari aggiustamenti sul layout voluto */
 header .dropdown-menu li{
  display: inline-block;
  margin-right: 15px;
@@ -139,7 +140,11 @@ header nav .cs-cerca img {
     height: 23px;
 }
 
+/* qualche aggiustamento versione mobile (seguendo il breakpoint di BS) */
 @media screen and (max-width: 991px) {
+    header .navbar .container-fluid {
+        background-color: #fff;
+    }
     header .dropdown-menu {
         width: 100%;
         text-align: left;
@@ -162,6 +167,10 @@ header nav .cs-cerca img {
 
 
 
+/* main  ------------- */
+main {
+    margin-top: 100px; /* per fixed header*/
+}
 
 /* jumbotron */
 
@@ -173,3 +182,7 @@ header nav .cs-cerca img {
 
 
 /* footer  ------------- */
+footer{
+    background-color: #00439c;
+    padding: 80px 0;
+}
