@@ -189,3 +189,36 @@ footer{
     background-color: #00439c;
     padding: 80px 0;
 }
+
+footer a, footer a:hover {
+    color: #fff;
+}
+
+footer .cs-logo {
+    width: 96px;
+    display: block;
+    margin-bottom: 40px;
+}
+#cs-region {
+    width: 20px;
+    margin-right: 10px;
+}
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#cs-copy{
+    color: #fff;
+    font-size: 0.8rem;
+}
+#cs-copy a, #cs-copy a:hover{
+    text-decoration: underline;
+}
+#cs-copy img {
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+
