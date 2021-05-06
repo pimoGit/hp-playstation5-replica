@@ -16,12 +16,30 @@ body{
 }
 
     /* comportamento base della maggior parte dei link */
-a {
+a, a:hover {
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+
+    /* cambiamo ciò che di BS sarà sempre diverso in tutto il nostro progetto */
+.btn {
+    border-width: 2px;
+    border-radius: 40px;
 }
+    /* trik bordo interno (xbrowser ??)  */
+.btn:hover {
+    border: 2px solid #999;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.btn-secondary {
+    background-color: #363636;
+    border-color: #363636;
+}
+.btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #5c636a;
+}
+
+
 
 
 
@@ -41,6 +59,55 @@ header{
 #headup img {
     width: 75px;
     margin-right: 10px;
+}
+
+
+    /* personalizziamo ciò che ci serve, del componente navbar, 
+    circoscrivendo all'header e/o aggiungendo nostre class dove serve 
+    (usiamo stesse identiche selezioni che usa BS, ma circoscriviamo al notro header)
+    */
+
+header nav {
+ height: 64px;
+}
+
+    /* cambiamo comportamento base componente per avere dropdown relativi a header e non "li" */
+header .dropdown, .dropend, .dropstart, .dropup {
+    position: static;
+}
+    /* e averli a tutta larghezza */
+header .dropdown-menu {
+    width: 100%;
+}
+
+    /* regole links */
+header .navbar-light .navbar-nav .nav-link {
+ color: #000;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #0070d1;
+}
+header .dropdown-toggle::after{
+    background-image: url("../img/chevron-down-solid.svg");
+    color: #999;
+    width: 10px;
+    height: 10.5px;
+    /* resettiamo BS rules */
+    border: none;
+    vertical-align: middle;
+}
+    /* trick per hover su icona personalizata */
+header .dropdown-toggle:hover:after{
+    background-image: url("../img/chevron-down-solid-hover.svg");
+}
+
+
+    /* nostra class "cerca" */
+header nav .cerca {
+    margin-left: 15px;
+}
+header nav .cerca img {
+    height: 23px;
 }
 
 
