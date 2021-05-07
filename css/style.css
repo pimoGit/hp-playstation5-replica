@@ -236,12 +236,13 @@ main {
 .cs-jumbo-grid img {
     max-width: 100%;
     border-radius: 20px;
+    padding: 3px;
+    background-color: #fff;
+    border: solid 2px transparent;
 }
     /* aggiungiamo simulazione item attivo  */
 .cs-jumbo-grid .cs-active {
-    padding: 5px;
-    background-color: #fff;
-    border: solid 2px #0072ce;
+    border-color: #0072ce;
 }
 
 
