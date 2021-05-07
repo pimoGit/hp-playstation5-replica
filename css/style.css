@@ -200,14 +200,8 @@ main {
 /* jumbotron / carousel */
 /* centralizziamo ciò che si può (ce ne sono di 3 tipi con parti simili) */
 
-#cs-jumbo-1{
 
-}
 
-#cs-jumbo-1 .cs-jumbo-display {
-    background-image: url("../img/jumbo-bg.png");
-    padding: 250px 0 50px 0;
-}
     /* jumbo display */
 .cs-jumbo-display {
     background-position: center;
@@ -233,15 +227,32 @@ main {
 .cs-jumbo-grid {
     padding: 30px 0;
 }
-.cs-jumbo-grid img {
+.cs-jumbo-grid a img {
     max-width: 100%;
     border-radius: 20px;
+}
+
+
+/* jumbo 1 */
+#cs-jumbo-1 .cs-jumbo-display {
+    background-image: url("../img/jumbo-bg.png");
+    padding: 250px 0 50px 0;
+}
+
+#cs-jumbo-1 .cs-jumbo-grid a img {
     padding: 3px;
     background-color: #fff;
     border: solid 2px transparent;
+    /* volendo aggiungiamo anche qui effetto hover semplificato */
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+#cs-jumbo-1 .cs-jumbo-grid a:hover img {
+    top: -10px;
 }
     /* aggiungiamo simulazione item attivo  */
-.cs-jumbo-grid .cs-active {
+#cs-jumbo-1  .cs-jumbo-grid .cs-active {
     border-color: #0072ce;
 }
 
