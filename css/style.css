@@ -48,7 +48,8 @@ a, a:hover {
 /* header  ------------- */
 header{
     font-family: helvetica, arial, sans-serif;
-    height: 100px; /* test*/
+    height: 100px;
+    background-color: #fff;
 }
 
 #cs-headup{
@@ -69,6 +70,9 @@ header{
 
 header nav {
  height: 64px;
+}
+header .nav-item:not(.cs-cerca){
+    margin-right: 10px;
 }
 
     /* cambiamo comportamento base componente per avere dropdown relativi a header e non "li" */
@@ -137,7 +141,7 @@ header .dropdown-toggle:hover:after{
 
     /* nostra class "cerca" */
 header nav .cs-cerca {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 header nav .cs-cerca img {
     height: 23px;
@@ -147,6 +151,9 @@ header nav .cs-cerca img {
 @media screen and (max-width: 991px) {
     header .navbar .container-fluid {
         background-color: #fff;
+    }
+    header .nav-item:not(.cs-cerca){
+        margin-right: 0;
     }
     header .dropdown-menu {
         width: 100%;
@@ -188,6 +195,8 @@ main {
 footer{
     background-color: #00439c;
     padding: 80px 0;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 footer a, footer a:hover {
@@ -211,7 +220,6 @@ footer li {
 
 #cs-copy{
     color: #fff;
-    font-size: 0.8rem;
 }
 #cs-copy a, #cs-copy a:hover{
     text-decoration: underline;
