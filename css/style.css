@@ -19,6 +19,9 @@ body{
 a, a:hover {
     text-decoration: none;
 }
+sup {
+    font-size: 0.5rem;
+}
 
     /* cambiamo ciò che di BS sarà sempre diverso in tutto il nostro progetto */
 
@@ -201,7 +204,6 @@ main {
 /* centralizziamo ciò che si può (ce ne sono di 3 tipi con parti simili) */
 
 
-
     /* jumbo display */
 .cs-jumbo-display {
     background-position: center;
@@ -255,6 +257,29 @@ main {
 #cs-jumbo-1  .cs-jumbo-grid .cs-active {
     border-color: #0072ce;
 }
+
+/* jumbo 2 */
+#cs-jumbo-2 .cs-jumbo-display {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    padding: 50px 0;
+}
+#cs-jumbo-2 .cs-jumbo-grid{
+ background-color: #1f1f1f;
+}
+
+#cs-jumbo-2 h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#cs-jumbo-2 h4 {
+    font-size: 1.5rem;
+}
+#cs-jumbo-2 .cs-jumbo-grid a span {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
 
 
 
