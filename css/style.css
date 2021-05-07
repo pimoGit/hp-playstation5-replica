@@ -21,6 +21,8 @@ a, a:hover {
 }
 
     /* cambiamo ciò che di BS sarà sempre diverso in tutto il nostro progetto */
+
+    /* bottoni */
 .btn {
     border-width: 2px;
     border-radius: 40px;
@@ -30,6 +32,7 @@ a, a:hover {
     border: 2px solid #999;
     box-shadow: inset 0px 0px 0px 2px #fff;
 }
+
 .btn-secondary {
     background-color: #363636;
     border-color: #363636;
@@ -38,6 +41,17 @@ a, a:hover {
     background-color: #5c636a;
     border-color: #5c636a;
 }
+
+.btn-danger {
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+.btn-danger:hover {
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+    box-shadow: inset 0px 0px 0px 2px #000;
+}
+
 
 
 /* ------ ogni id o class custom (quindi non di BS) inizia con "cs-" ---------- */
@@ -182,8 +196,44 @@ main {
     margin-top: 100px; /* per fixed header*/
 }
 
-/* jumbotron */
 
+/* jumbotron / carousel */
+/* centralizziamo ciò che si può (ce ne sono di 3 tipi con parti simili) */
+
+#cs-jumbo-1{
+
+}
+
+#cs-jumbo-1 .cs-jumbo-display {
+    background-image: url("../img/jumbo-bg.png");
+    padding: 250px 0 50px 0;
+}
+    /* jumbo display */
+.cs-jumbo-display {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.cs-jumbo-display img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+.cs-jumbo-display h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.cs-jumbo-display p{
+    margin-bottom: 30px;
+}
+
+    /* jumbo grid */
+.cs-jumbo-grid img{
+    max-width: 100%;
+    border-radius: 10px;
+}
 
 
 
