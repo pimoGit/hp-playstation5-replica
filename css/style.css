@@ -235,7 +235,7 @@ main {
 }
 
 
-/* jumbo 1 */
+    /* jumbo 1 */
 #cs-jumbo-1 .cs-jumbo-display {
     background-image: url("../img/jumbo-bg.png");
     padding: 250px 0 50px 0;
@@ -258,7 +258,7 @@ main {
     border-color: #0072ce;
 }
 
-/* jumbo 2 */
+    /* jumbo 2 */
 #cs-jumbo-2 .cs-jumbo-display {
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     padding: 50px 0;
@@ -281,6 +281,20 @@ main {
 }
 
 
+
+    /* mini-jumbo-1 */
+#cs-mini-jumbo-1 .cs-jumbo-display {
+    background-image: none;
+    background-color: #bebcbb;
+    padding: 0;
+    /* min-height: 400px; */
+}
+    /* img di dx */
+#cs-mini-jumbo-1 .cs-cont_img {
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 0;
+}
 
 
 
