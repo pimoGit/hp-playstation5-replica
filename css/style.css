@@ -55,6 +55,28 @@ sup {
     box-shadow: inset 0px 0px 0px 2px #000;
 }
 
+.btn-light {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+.btn-light:hover {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    box-shadow: inset 0px 0px 0px 2px #161c3b;
+}
+
+.btn-light2 {
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+    color: #2d64e6;
+}
+.btn-light2:hover {
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+    box-shadow: 0px 0px 0px 3px rgba(217, 218, 220, .3);
+    color: #2d64e6;
+}
+
 
 
 /* ------ ogni id o class custom (quindi non di BS) inizia con "cs-" ---------- */
@@ -287,10 +309,20 @@ main {
     background-image: none;
     background-color: #bebcbb;
     padding: 0;
+    color: #1f1f1f;
     /* min-height: 400px; */
 }
-    /* img di dx */
-#cs-mini-jumbo-1 .cs-cont_img {
+    /* mini-jumbo-1 */
+#cs-mini-jumbo-2 .cs-jumbo-display {
+    background-image: none;
+    background-color: #161c3b;
+    padding: 0;
+    color: #f5f5f5;
+    /* min-height: 400px; */
+}
+
+    /* mini-jumbo#n img di dx */
+#cs-mini-jumbo-1 .cs-cont_img, #cs-mini-jumbo-2 .cs-cont_img {
     max-width: initial;
     width: 100%;
     margin-bottom: 0;
