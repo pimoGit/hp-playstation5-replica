@@ -422,43 +422,100 @@
 
         <!-- plays5 -->
         <section id="play5">
-            <!-- intro (identica ad altre 3 sub sezioni) -->
-            <section class="intro">
-                <h5>
-                    Play Has No Limits
-                </h5>
-                <h2>
-                    Ecco la PlayStation 5
-                </h2>
-                <h4>
-                    Tuffati in nuove possibilità di gioco completamente inaspettate
-                </h4>
-            </section>
+            <!-- container globale di sezione qui (grazie a bg uguali) -->
+            <div class="container">
+                <!-- intro (identica ad altre 3 sub sezioni) -->
+                <section class="intro">
+                    <h5>
+                        Play Has No Limits
+                    </h5>
+                    <h2>
+                        Ecco la PlayStation 5
+                    </h2>
+                    <h4>
+                        Tuffati in nuove possibilità di gioco completamente inaspettate
+                    </h4>
+                </section>
 
-            <!-- jumbo display (HTML  simile ai mini-jumbo# sotto) -->
-            <div class="cs-jumbo-display">
-                <div class="container">
-                    <!-- centriamo verticalmente le col dalla row -->
-                    <div class="row align-items-center">
-                        <!-- quando col a 12 gli diamo margin-bottom -->
-                        <div class="col-12 mb-5 col-md-4  mb-md-0">
-                            <h2>
-                                Console PlayStation 5
-                            </h2>
-                            <p>
-                                Sperimenta la nuova generazione di incredibili giochi PlayStation.
-                            </p>
-                            <a class="btn  btn-primary" href="#">Maggiori informazioni</a>
+                <!-- jumbo display (HTML  simile ai mini-jumbo# sotto) -->
+                <section class="cs-jumbo-display">
+                        <!-- centriamo verticalmente le col dalla row -->
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-5">
+                                <h2>
+                                    Console PlayStation 5
+                                </h2>
+                                <p>
+                                    Sperimenta la nuova generazione di incredibili giochi PlayStation.
+                                </p>
+                                <a class="btn  btn-primary" href="#">Maggiori informazioni</a>
+                            </div>
+                            <!-- col img (con allineamento orizzontale center) -->
+                            <div class="col-12 col-md-7 text-center">
+                                <!-- aggiungiamo nostra class a img per controllo specifico -->
+                                <img class="cs-cont_img" src="img/playstation-5-thumb.png" alt="playstation-5">
+                            </div>
                         </div>
-                        <!-- col img -->
-                        <div class="col-12 col-md-8">
-                            <!-- aggiungiamo nostra class a img per controllo specifico -->
-                            <img class="cs-cont_img" src="img/playstation-5-thumb.png" alt="playstation-5">
+                </section>
+
+                <!-- play5 grid -->
+                <section id="play5-grid">
+                        <!-- comandiamo dalla row la disposizione responsive dei blocchi (grazie al fatto di aver blocchi uguali) -->
+                        <div class="row row-cols-2 row-cols-md-5">
+                            <!-- block 
+                            (e sulla col controlliamo il margin-bottom)-->
+                            <div class="col mb-3 mb-md-0">
+                                <!-- (class cs-active per simulare item attivo) -->
+                                <a href="#" class="text-center  cs-active">
+                                    <img src="img/playstation-5-thumb.png" alt="playstation-5">
+                                    <!-- facciamo sparire scritte sotto a md -->
+                                    <span class="d-none d-md-block">
+                                        Console PS5
+                                    </span>
+                                </a>
+                            </div>
+
+                            <!-- block -->
+                            <div class="col mb-3 mb-md-0">
+                                <a href="#" class="text-center">
+                                    <img src="img/joypad-thumb.png" alt="joypad">
+                                    <span class="d-none d-md-block">
+                                        Controller wireless DualSense<sup>TM</sup>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- block -->
+                            <div class="col mb-3 mb-md-0">
+                                <a href="#" class="text-center">
+                                    <img src="img/headset-thumb.png" alt="headset">
+                                    <span class="d-none d-md-block">
+                                        Cuffie wireless con microfono PULSE 3<sup>TM</sup>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- block -->
+                            <div class="col mb-3 mb-md-0">
+                                <a href="#" class="text-center">
+                                    <img src="img/remote-thumb.png" alt="remote">
+                                    <span class="d-none d-md-block">
+                                        Telecomando Media
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- block -->
+                            <div class="col mb-3 mb-md-0">
+                                <a href="#" class="text-center">
+                                    <img src="img/camera-thumb.jpg" alt="camera">
+                                    <span class="d-none d-md-block">
+                                        Telecamera HD
+                                    </span>
+                                </a>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
+                </section>
+
             </div>
-            
         </section>
 
         <!-- jumbo #2 -->
