@@ -36,6 +36,11 @@ sup {
     box-shadow: inset 0px 0px 0px 2px #fff;
 }
 
+.btn-primary, .btn-primary:hover {
+    background-color: #2d64e6;
+    border-color: #2d64e6;
+}
+
 .btn-secondary {
     background-color: #363636;
     border-color: #363636;
@@ -223,7 +228,7 @@ main {
 
 
 /* jumbotron / carousel */
-/* centralizziamo ciò che si può (ce ne sono di 3 tipi con parti simili) */
+/* centralizziamo ciò che si può (ce ne sono di 3 tipi rpincipalmente con parti simili +  1 minijumnbo in sezione play5) */
 
 
     /* jumbo display */
@@ -330,6 +335,40 @@ main {
 
 
 
+/* section play station 5 */
+
+    /* recicliamo ancora il display jumbo */
+#play5 .cs-jumbo-display {
+    background-image: none;
+    background-color: transparent;
+    color: #1f1f1f;
+}
+#play5 .cs-jumbo-display p {
+    font-size: 1.2rem;
+    color: #727272;
+}
+
+
+/* sub section intro (ci sono 3 sezioni diverse con questa parte uguale) */
+.intro {
+    text-align: center;
+    margin: 70px 0;
+    color: #1f1f1f;
+}
+.intro h5 {
+    color: #0072ce;
+    font-size: .9rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.intro h4 {
+    font-size: 1.3rem;
+    color: #727272;
+}
 
 
 
