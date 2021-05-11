@@ -328,7 +328,7 @@ main {
 
     /* mini-jumbo#n e play5  img di dx display */
 #cs-mini-jumbo-1 .cs-cont_img, #cs-mini-jumbo-2 .cs-cont_img, 
-#play5 .cs-cont_img {
+#cs-play5 .cs-cont_img {
     max-width: initial;
     width: 100%;
     margin-bottom: 0;
@@ -338,52 +338,52 @@ main {
 /* section play station 5 */
 
     /* recicliamo ancora il display jumbo (con regola img dx, come mini-jumbo sopra) */
-#play5 .cs-jumbo-display {
+#cs-play5 .cs-jumbo-display {
     background-image: none;
     background-color: transparent;
     padding: 50px 0;
     color: #1f1f1f;
 }
-#play5 .cs-jumbo-display p {
+#cs-play5 .cs-jumbo-display p {
     font-size: 1.2rem;
     color: #727272;
 }
 
     /* regole per griglia items  */
-#play5-grid {
+#cs-play5-grid {
     margin: 35px 0;
 }
-#play5-grid a {
+#cs-play5-grid a {
     display: block;
     height: 100%;
     padding-bottom: 5px;
     opacity: .7;
     transition: all 0.5s ease-in-out;
 }
-#play5-grid a:hover {
+#cs-play5-grid a:hover {
     opacity: 1;
 }
-#play5-grid a.cs-active {
+#cs-play5-grid a.cs-active {
     border-bottom: solid 2px #0072ce;
     opacity: 1;
 } 
-#play5-grid img {
+#cs-play5-grid img {
     max-width: 50%;
     margin-bottom: 10px;
 }
-#play5-grid span {
+#cs-play5-grid span {
     color: #1f1f1f;
     display: block;
 }
 /* qualche aggiustamento versione mobile ( sotto md seguendo il breakpoint di BS) */
 @media screen and (max-width:767px) {
-    #play5 .cs-jumbo-display {
+    #cs-play5 .cs-jumbo-display {
         padding-bottom: 0;
     }
-    #play5-grid {
+    #cs-play5-grid {
         margin: 0;
     }
-    #play5-grid img {
+    #cs-play5-grid img {
         max-width: 100%;
     }
     
@@ -391,27 +391,47 @@ main {
 
 
 
+/* section play station 4 */
+#cs-play4 {
+    margin-bottom: 70px;
+}
+#cs-play4 .cs-grid img {
+    max-width: 100%;
+}
+#cs-play4 .cs-grid h3 {
+    font-size: 2.3rem;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+}
+#cs-play4 .cs-grid p {
+    font-size: 1.3rem;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
 
 /* sub section intro (ci sono 3 sezioni diverse con questa parte uguale) */
-.intro {
+.cs-intro {
     text-align: center;
     margin: 70px 0;
     color: #1f1f1f;
 }
-.intro h5 {
+.cs-intro h5 {
     color: #0072ce;
     font-size: .9rem;
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.intro h2 {
+.cs-intro h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
-.intro h4 {
+.cs-intro h4 {
     font-size: 1.3rem;
     color: #727272;
 }
+
+
 
 
 
