@@ -20,7 +20,7 @@ a, a:hover {
     text-decoration: none;
 }
 sup {
-    font-size: 0.5rem;
+    font-size: 0.5em;
 }
 
     /* cambiamo ciò che di BS sarà sempre diverso in tutto il nostro progetto */
@@ -191,7 +191,7 @@ header nav .cs-cerca img {
     height: 23px;
 }
 
-/* qualche aggiustamento versione mobile (seguendo il breakpoint di BS) */
+/* qualche aggiustamento versione mobile ( sotto lg seguendo il breakpoint di BS) */
 @media screen and (max-width: 991px) {
     header .navbar .container-fluid {
         background-color: #fff;
@@ -375,7 +375,19 @@ main {
     color: #1f1f1f;
     display: block;
 }
-
+/* qualche aggiustamento versione mobile ( sotto md seguendo il breakpoint di BS) */
+@media screen and (max-width:767px) {
+    #play5 .cs-jumbo-display {
+        padding-bottom: 0;
+    }
+    #play5-grid {
+        margin: 0;
+    }
+    #play5-grid img {
+        max-width: 100%;
+    }
+    
+}
 
 
 
