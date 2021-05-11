@@ -318,9 +318,6 @@ main {
     /* min-height: 400px; */
 }
     /* mini-jumbo-2 */
-#cs-mini-jumbo-2 {
-    margin-top: 20px;
-}
 #cs-mini-jumbo-2 .cs-jumbo-display {
     background-image: none;
     background-color: #161c3b;
@@ -409,6 +406,19 @@ main {
     font-size: 1.3rem;
     color: #727272;
     margin-bottom: 20px;
+}
+
+
+/* section sconti */
+#cs-descount {
+    margin-bottom: 30px;
+}
+
+
+/* section social */
+#cs-social {
+    max-width: 580px;
+    margin: 50px auto;
 }
 
 /* in comune delle parti che usano cs-grid */
