@@ -317,7 +317,10 @@ main {
     color: #1f1f1f;
     /* min-height: 400px; */
 }
-    /* mini-jumbo-1 */
+    /* mini-jumbo-2 */
+#cs-mini-jumbo-2 {
+    margin-top: 20px;
+}
 #cs-mini-jumbo-2 .cs-jumbo-display {
     background-image: none;
     background-color: #161c3b;
@@ -325,6 +328,7 @@ main {
     color: #f5f5f5;
     /* min-height: 400px; */
 }
+
 
     /* mini-jumbo#n e play5  img di dx display */
 #cs-mini-jumbo-1 .cs-cont_img, #cs-mini-jumbo-2 .cs-cont_img, 
@@ -395,9 +399,7 @@ main {
 #cs-play4 {
     margin-bottom: 70px;
 }
-#cs-play4 .cs-grid img {
-    max-width: 100%;
-}
+
 #cs-play4 .cs-grid h3 {
     font-size: 2.3rem;
     color: #1f1f1f;
@@ -407,6 +409,11 @@ main {
     font-size: 1.3rem;
     color: #727272;
     margin-bottom: 20px;
+}
+
+/* in comune delle parti che usano cs-grid */
+.cs-grid img {
+    max-width: 100%;
 }
 
 
