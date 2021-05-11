@@ -342,7 +342,7 @@ main {
 #cs-play5 .cs-jumbo-display {
     background-image: none;
     background-color: transparent;
-    padding: 50px 0;
+    padding:0;
     color: #1f1f1f;
 }
 #cs-play5 .cs-jumbo-display p {
@@ -419,6 +419,9 @@ main {
 #cs-social {
     max-width: 580px;
     margin: 50px auto;
+}
+#cs-social .cs-intro h2 {
+    font-size: 2rem;
 }
 
 /* in comune delle parti che usano cs-grid */
