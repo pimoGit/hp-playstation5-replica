@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  settato già dalla libreria*/
+}  
+settato già dalla libreria */
 
 body{
     /* i font principali ('SST W20 Medium' e "sst") sono di SONY a pagamento, 
@@ -19,18 +20,19 @@ body{
 a, a:hover {
     text-decoration: none;
 }
+
 sup {
     font-size: 0.5em;
 }
 
-    /* cambiamo ciò che di BS sarà sempre diverso in tutto il nostro progetto */
+    /* cambiamo ciò che dei bottoni BS sarà sempre diverso in tutto il nostro progetto */
 
     /* bottoni */
 .btn {
     border-width: 2px;
     border-radius: 40px;
 }
-    /* trik bordo interno (xbrowser ??)  */
+    /* trik bordo interno  */
 .btn:hover {
     border: 2px solid #999;
     box-shadow: inset 0px 0px 0px 2px #fff;
@@ -84,14 +86,14 @@ sup {
 
 
 
-/* ------ ogni id o class custom (quindi non di BS) inizia con "cs-" ---------- */
+/* ------ ogni id o class custom nostra (quindi non di BS) inizia con "cs-" ---------- */
 
 
 
 
 /* header  ------------- */
 header{
-    font-family: helvetica, arial, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
     height: 100px;
     background-color: #fff;
 }
@@ -109,17 +111,17 @@ header{
 
     /* personalizziamo ciò che ci serve, del componente navbar, 
     circoscrivendo all'header e/o aggiungendo nostre class dove serve 
-    (usiamo stesse identiche selezioni che usa BS, ma circoscriviamo al notro header)
+    (usiamo stesse identiche selezioni che usa BS (per non aver problemi di sovrascrittura), ma circoscriviamo al notro header)
     */
 
 header nav {
- height: 64px;
+    height: 64px;
 }
 header .nav-item:not(.cs-cerca){
     margin-right: 10px;
 }
 
-    /* cambiamo comportamento base componente per avere dropdown relativi a header e non "li" */
+    /* cambiamo comportamento base componente, per avere dropdown con posizionamenti relativi a header e non ai "li" */
 header .dropdown, .dropend, .dropstart, .dropup {
     position: static;
 }
@@ -134,8 +136,8 @@ header .dropdown-menu[data-bs-popper]{
 }
     /* e altri vari aggiustamenti sul layout voluto */
 header .dropdown-menu li{
- display: inline-block;
- margin-right: 15px;
+    display: inline-block;
+    margin-right: 15px;
 }
 header .dropdown-item:focus, .dropdown-item:hover {
     color: #000;
@@ -173,17 +175,20 @@ header .dropdown-toggle::after{
     color: #999;
     width: 10px;
     height: 10.5px;
-    /* resettiamo BS rules */
+    /* resettiamo un paio di BS rules */
     border: none;
     vertical-align: middle;
 }
     /* trick per hover su icona personalizata */
-header .dropdown-toggle:hover:after{
+header .dropdown-toggle:hover:after, header .dropdown-toggle.show:after{
     background-image: url("../img/chevron-down-solid-hover.svg");
+}
+header .dropdown-toggle.show:after{
+    transform: rotate(180deg);
 }
 
 
-    /* nostra class "cerca" */
+    /* nostra class "cerca" per aggiustamenti sul particolare */
 header nav .cs-cerca {
     margin-left: 10px;
 }
@@ -262,7 +267,7 @@ main {
 }
 
 
-    /* jumbo 1 */
+/* jumbo 1 */
 #cs-jumbo-1 .cs-jumbo-display {
     background-image: url("../img/jumbo-bg.png");
     padding: 250px 0 50px 0;
@@ -271,7 +276,7 @@ main {
 #cs-jumbo-1 .cs-jumbo-grid a img {
     padding: 3px;
     background-color: #fff;
-    border: solid 2px transparent;
+    border: solid 2px transparent; /* per uniformare imngombro rispetto all'active*/
     /* volendo aggiungiamo anche qui effetto hover semplificato */
     position: relative;
     top: 0;
@@ -285,7 +290,9 @@ main {
     border-color: #0072ce;
 }
 
-    /* jumbo 2 */
+
+
+/* jumbo 2 */
 #cs-jumbo-2 .cs-jumbo-display {
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     padding: 50px 0;
@@ -309,7 +316,8 @@ main {
 
 
 
-    /* mini-jumbo-1 */
+
+/* mini-jumbo-1 */
 #cs-mini-jumbo-1 .cs-jumbo-display {
     background-image: none;
     background-color: #bebcbb;
@@ -317,7 +325,9 @@ main {
     color: #1f1f1f;
     /* min-height: 400px; */
 }
-    /* mini-jumbo-2 */
+    
+
+/* mini-jumbo-2 */
 #cs-mini-jumbo-2 .cs-jumbo-display {
     background-image: none;
     background-color: #161c3b;
@@ -336,6 +346,8 @@ main {
 }
 
 
+
+
 /* section play station 5 */
 
     /* recicliamo ancora il display jumbo (con regola img dx, come mini-jumbo sopra) */
@@ -350,7 +362,7 @@ main {
     color: #727272;
 }
 
-    /* regole per griglia items  */
+    /* regole per griglia items in play5  */
 #cs-play5-grid {
     margin: 35px 0;
 }
@@ -376,7 +388,7 @@ main {
     color: #1f1f1f;
     display: block;
 }
-/* qualche aggiustamento versione mobile ( sotto md seguendo il breakpoint di BS) */
+    /* qualche aggiustamento versione mobile ( sotto md seguendo il breakpoint di BS) */
 @media screen and (max-width:767px) {
     #cs-play5 .cs-jumbo-display {
         padding-bottom: 0;
@@ -409,10 +421,14 @@ main {
 }
 
 
+
+
 /* section sconti */
 #cs-descount {
     margin-bottom: 30px;
 }
+
+
 
 
 /* section social */
@@ -424,10 +440,14 @@ main {
     font-size: 2rem;
 }
 
+
+
 /* in comune delle parti che usano cs-grid */
 .cs-grid img {
     max-width: 100%;
 }
+
+
 
 
 /* sub section intro (ci sono 3 sezioni diverse con questa parte uguale) */
