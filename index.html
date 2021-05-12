@@ -23,7 +23,7 @@
         <!-- nav principale
         (personalizzazione del componente base navbar
         https://getbootstrap.com/docs/5.0/components/navbar/#supported-content)
-        e teniamo una versione inizialmente semplificata, sia per mobile, sia per interazione dropdown versione desktop-->
+        versione semplificata, sia per mobile, sia per interazione dropdown versione desktop-->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -298,7 +298,7 @@
 
                 <!-- nav parte DX -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <!-- voce con dropdown -->
+                    <!-- voce con dropdown (ma più semplice delle altre) -->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       My PLayStation
@@ -379,12 +379,12 @@
                         (e sulla col controlliamo il margin-bottom)-->
                         <div class="col mb-3 mb-lg-0">
                             <a href="#">
-                                <!-- aggiungiamo class active per simulare item attivo -->
+                                <!-- aggiungiamo class active nostra per simulare item attivo -->
                                 <img class="cs-active" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
                             </a>
                         </div>
-                         <!-- block -->
-                         <div class="col mb-3 mb-lg-0">
+                        <!-- block -->
+                        <div class="col mb-3 mb-lg-0">
                             <a href="#">
                                 <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet">
                             </a>
@@ -554,7 +554,7 @@
 
                     <!-- comandiamo dalla row come #jumbo1 -->
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6">
-                        <!-- block stesse impostazioni di #jumbo1 (si aggiunge testo span/text negli items, e ce ne sono di più (possiamo metterne di più in stessa row, comandando da li in flex))-->
+                        <!-- block stesse impostazioni di #jumbo1 (si aggiunge testo negli items, e ce ne sono di più (possiamo metterne di più in stessa row, comandando distribuzione cols dalla stessa row in flex))-->
                         <div class="col mb-5">
                             <a href="#">
                                 <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks">
@@ -687,7 +687,7 @@
                     </h4>
                 </section>
 
-                <!-- play4 grid -->
+                <!-- play4 grid (claase di cs-grid generica che usiamo anche per "sconti" e "social") -->
                 <section class="cs-grid">
                     <!-- comandiamo dalla row la disposizione responsive dei blocchi -->
                     <div class="row row-cols-1 row-cols-md-3">
@@ -741,7 +741,7 @@
             </div>
         </section>
         
-        <!-- mini-jumbo #1 (molto simile a jumbo) -->
+        <!-- mini-jumbo #1 (molto simile a jumbo ma ha solo display) -->
         <section id="cs-mini-jumbo-1">
             <!-- jumbo display (HTML molto simile a #jumbo1, 
             tranne che usiamo div invece di altra section dentro) -->
@@ -782,7 +782,7 @@
                     </h4>
                 </section>
 
-                <!-- sezione sconti grid -->
+                <!-- sezione sconti grid (con class cs-grid generica, come in "play4" e "social") -->
                 <section class="cs-grid">
                     <!-- comandiamo dalla row la disposizione responsive dei blocchi -->
                     <div class="row row-cols-1 row-cols-md-3">
@@ -815,7 +815,7 @@
             </div>
         </section>        
 
-        <!-- mini-jumbo #2 (uguale a mini-jumbo#1) -->
+        <!-- mini-jumbo #2 (identico a mini-jumbo#1) -->
         <section id="cs-mini-jumbo-2">
             <div class="cs-jumbo-display">
                 <div class="container">
@@ -846,7 +846,7 @@
                     </h2>
                 </section>
 
-                <!-- sezione social grid -->
+                <!-- sezione social grid (anche qui class cs-grid generica) -->
                 <section class="cs-grid">
                     <!-- comandiamo dalla row la disposizione responsive dei blocchi -->
                     <div class="row row-cols-2 row-cols-sm-4">
@@ -890,8 +890,7 @@
         <div class="container">
             <div class="row">
                 <!-- col logo + region 
-                (con margin-bottom di 5 unità fino ad lg)
-                -->
+                (con margin-bottom di 5 unità fino ad lg) -->
                 <div class="col-lg-6  mb-5 mb-lg-0">
                     <img class="cs-logo" src="img/ps-footer.svg" alt="playStation logo">
                     <a href="#">
@@ -899,6 +898,7 @@
                         Country / Region: Italy
                     </a>
                 </div>
+
                 <!-- col link footer -->
                 <div class="col-md-4 col-lg-2">
                     <ul>
@@ -961,15 +961,14 @@
                 </div>
             </div>
 
-            <!-- copy 
-            (con margin-top responsive)-->
+            <!-- copy (con margin-top responsive)-->
             <div class="row">
                 <div class="col-lg-6 mt-5 mt-lg-0">
                     <!-- usiamo un nostro blocco interno qui -->
                     <div id="cs-copy">
-                        <img src="img/sie-logo.svg" alt="logo sonoy IE">
+                        <img src="img/sie-logo.svg" alt="logo sony IE">
                         <p>
-                            Website ©2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati. 
+                            Website &copy;2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati. 
                             <a href="#">
                                 Maggiori info
                             </a>  
