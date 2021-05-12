@@ -386,7 +386,6 @@ main {
 }
 #cs-play5-grid span {
     color: #1f1f1f;
-    display: block;
 }
     /* qualche aggiustamento versione mobile ( sotto md seguendo il breakpoint di BS) */
 @media screen and (max-width:767px) {
